@@ -2,6 +2,10 @@
 # https://developers.cloudflare.com/workers/platform/deploy-button/
 
 name: Build
+on:
+  push:
+    branches:
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
